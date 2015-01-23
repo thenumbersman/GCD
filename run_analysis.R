@@ -3,7 +3,7 @@
 
 ### Working Directory Path Structure: Drive:/Main Dir/JHU R Getting and Cleaning Data/UCI HAR Dataset
 
-#  Course Project Script: run_analysis.R [64-bit R-3.1.0]
+#  Course Project Script: run_analysis.R
 
 #### Input
 
@@ -122,13 +122,13 @@ for(i in 1:nrow(avgdata))
 
 ### Write Tidy Data Set (Requirement 5)
 
-write.table(avgdata, file="tidydatagcd.txt",
+write.table(avgdata, file="tidydataset.txt",
             row.names=FALSE,
             col.names=TRUE)
         
 ### View Tidy Data Set
 
-tidydata <- read.table("tidydatagcd.txt", header=TRUE)
+tidydata <- read.table("tidydataset.txt", header=TRUE)
 View(tidydata)
 
 ###End of R-Script
